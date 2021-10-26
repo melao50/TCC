@@ -1,8 +1,11 @@
-import react from "react";
+import React from "react";
+import Inicial from "./index";
 
 function Initial(){
     return(
-       <p></p>
+       <div>
+           <Inicial />
+       </div>
     );
 };
 

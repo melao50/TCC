@@ -1,9 +1,12 @@
-import react from "react";
+import React from "react";
+import Login from "./index"
 
-function Main(){
+function login(){
     return(
-        <div></div>
+       <div>
+           <Login />
+       </div>
     );
 };
 
-export default Main;
+export default login;
