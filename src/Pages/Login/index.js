@@ -10,7 +10,7 @@ const Login = () => {
                 <img src="https://www.gellog.com.br/assets/imagens/avatar.png" alt="Login-app" />
             </div>
             <div className="login-right">
-                <h1>Acessar o App</h1>
+                <h1>Escola de Estética</h1>
 
                 <div className="loginInputemail">
                     <MdEmail />
@@ -28,6 +28,12 @@ const Login = () => {
                 </div>
                 <button type="submit">
                     Entrar
+                </button>
+
+                <h4>Não tenho conta</h4>
+
+                <button type="submit">
+                    Cadastrar
                 </button>
             </div>
         </div>
