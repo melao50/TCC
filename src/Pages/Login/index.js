@@ -3,15 +3,20 @@ import './login.css'
 
 import { MdEmail, MdLock } from "react-icons/md";
 import { HiEye, HiEyeOff } from "react-icons/hi";
+import { useHistory } from "react-router-dom";
 
 function Login() {
     const[email, setEmail] = useState("")
     const[password, setPassword] = useState("")
     const[show, setShow] = useState(false)
 
+    let history = useHistory("");
+
+
     const handleClick = (e) => {
         e.preventDefault()
         setShow(!show);
+        history.push("/initial"); 
     }
 
 
@@ -54,8 +59,8 @@ function Login() {
                         )}
                     </div>
                 </div>
-                <button type="submit">
-                    Entrar
+                <button type="submit" onClick={handleClick}>
+                Entrar
                 </button>
 
                 <h4>Não tenho uma conta</h4>

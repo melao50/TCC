@@ -68,3 +68,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+<!-- import { useHistory } from "react-router-dom";
+
+function HomeButton() {
+  let history = useHistory();
+
+  function handleClick() {
+    history.push("/home");
+  }
+
+  return (
+    <button type="button" onClick={handleClick}>
+      Go home
+    </button>
+  );
+}
+useLocation--!>
