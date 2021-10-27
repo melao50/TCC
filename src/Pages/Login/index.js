@@ -13,12 +13,15 @@ const[show, setShow] = useState(false)
 let history = useHistory("");
 
 
-const handleClick = (e) => {
+const handleSubmitClick = (e) => {
 e.preventDefault()
-setShow(!show);
 history.push("/initial"); 
 }
 
+const handleVisibilityClick = (e) => {
+    e.preventDefault()
+    setShow(!show);
+    }
 
 return(
 <div className="login">
@@ -49,17 +52,17 @@ return(
         {show ? (
             <HiEye 
                 size={20}
-                onClick={handleClick}
+                onClick={handleVisibilityClick}
                 />
         ) : (
             <HiEyeOff 
                 size={20}
-                onClick={handleClick}
+                onClick={handleVisibilityClick}
             />
         )}
     </div>
 </div>
-<button type="submit" onClick={handleClick}>
+<button type="submit" onClick={handleSubmitClick}>
 Entrar
 </button>
 
