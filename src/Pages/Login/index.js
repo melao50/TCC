@@ -12,14 +12,14 @@ const Login = () => {
             <div className="login-right">
                 <h1>Escola de Estética</h1>
 
-                <div className="loginInputemail">
+                <div className="login-loginInputemail">
                     <MdEmail />
                     <input 
                     type="text"
                     placeholder="Digite seu Email" 
                     />
                 </div>
-                <div className= "loginInputPassword">
+                <div className= "login-loginInputPassword">
                     <MdLock />
                     <input
                         type="text"
