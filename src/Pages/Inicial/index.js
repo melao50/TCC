@@ -1,23 +1,28 @@
 import React from "react";
+import './inicial.css';
 
+import tw from "./img/tw.png";
+import logo from "./img/logo2opcao.png";
+import linkedin from "./img/linkedin.png"
+import faceboook from "./img/facebook.png"
 
 const Inicial = () => {
-    return (
-     <div className="inicial">
+    return(
+<div className="inicial">
         <div class="header-1">
         <div class="logo">
-            <img src="./img/logo.png" />
+            <img src={logo} />
         </div>
         <div class="redes-sociais">
              <ul>
                 <li>
-                    <a href=""><img src="./img/facebook.png" /></a>
+                    <a href=""><img src={faceboook} /></a>
                 </li>
                  <li>
-                    <a href=""><img src="./img/tw.png" /></a>
+                    <a href=""><img src={tw} /></a>
                 </li>
                 <li>
-                    <a href=""><img src="./img/linkedin.png" /></a>
+                    <a href=""><img src={linkedin} /></a>
                 </li>
                 </ul>
 
@@ -38,7 +43,7 @@ const Inicial = () => {
                 type="text"
             />
         <div className="footer">
-        <footer>
+    <footer>
         <p>Fale conosco:
         <a href="mailto:hege@example.com">escoladeesteticaavpaulista@gmail.com</a></p>
     </footer>
@@ -52,4 +57,5 @@ const Inicial = () => {
         </div>
     );
 }
+
 export default Inicial;
